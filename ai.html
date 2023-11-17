@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <style>
+      .container {
+        width: 90vw;
+        height: 90vh;
+        background-color: lightblue;
+        border: 1px solid black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+
+      .shape {
+        position: absolute;
+      }
+
+      .rectangle {
+        width: 50px;
+        height: 50px;
+        background-color: purple;
+        display: inline-block;
+      }
+
+      .circle {
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+        border-radius: 25px;
+        display: inline-block;
+      }
+
+      .triangle {
+        width: 0;
+        height: 0;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 25px solid blue;
+      }
+
+      .line {
+        width: 100px;
+        height: 2px;
+        background-color: green;
+        transform: rotate(45deg);
+      }
+
+      .blob {
+        width: 50px;
+        height: 50px;
+        background-color: pink;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        display: inline-block;
+      }
+
+      .credit {
+        font-size: 12px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 10px;
+        color: grey;
+      }
+
+      .footer {
+
+        margin-top: 1000px;
+        bottom: 0;
+        width: 100%;
+        background-color: lightgray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <script>
+        function createShape() {
+          var shapeTypes = ["rectangle", "circle", "triangle", "line", "blob"];
+          var randomIndex = Math.floor(Math.random() * 5);
+          var shapeType = shapeTypes[randomIndex];
+
+          var shape = document.createElement("div");
+          shape.classList.add("shape");
+          shape.classList.add(shapeType);
+          shape.style.left = Math.random() * (0.9 * window.innerWidth - 50) + "px";
+          shape.style.top = Math.random() * (0.9 * window.innerHeight - 50) + "px";
+          document.querySelector(".container").appendChild(shape);
+        }
+
+        for (var i = 0; i < 50; i++) {
+          createShape();
+        }
+      </script>
+      <div class="credit">This art was created by AI</div>
+    </div>
+    <div class="footer">
+      <h1>Input</h1>
+      <ul>
+        <li>can you make a html css webpage</li>
+        <li>can you make one that looks like modern art using shapes</li>
+        <li>can you add more rectangles and place them randomly</li>
+        <li>now can you add other shapes to that html page and also place them randomly</li>
+        <li>they seem to be going off the page</li>
+        <li>can you make the container fit screen and make the shapes smaller</li>
+        <li>actually could you make the container slightly smaller and also add lines and blobs</li>
+        <li>some shapes are out of the container, and can you center the container</li>
+        <li>can you add blobs</li>
+        <li>the blob is a circle, can you make it more blobby</li>
+        <li>can you add a textbook that says "this art was created by AI" in the bottom right corner under the container</li>
+        <li>change background color</li>
+      </ul>
+    </div>
+      </body>
+    </html>

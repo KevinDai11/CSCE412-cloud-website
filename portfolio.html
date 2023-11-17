@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kevin Dai's Portfolio Website</title>
+        <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/7c0ef50d08.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+      <link id = "style" rel="stylesheet" type="text/css" href="./css/style2.css">
+      <script src="js/toggle.js"></script>
+    </head>
+  
+  <body class = "other">
+    <ul class="nav-bar">
+        <li><a href="ai.html">AI-generated website</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a class="active" href="portfolio.html">Portfolio</a></li>
+        <li><a href= "about.html">About Me</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li style = "float: left">
+            <div class="name">
+                <img class = "logo" src = "img/a&mlogo.png">
+                <button class = "toggle-button" onclick="toggleStyleSheet()" type="button">Toggle Style</button>
+                <strong>Kevin Dai</strong>
+            </div>
+        </li>
+    </ul> 
+    
+    <div class="portfolio-text">
+        <h1 style="text-decoration: underline;">Portfolio</h1>
+        <div class="portfolio-projects">
+            <div class = project1>
+                <div class = "portfolio-project-title">
+                    <h3>Anagrams Game</h3>
+                    <img src="./img/anagrams.png"></img>
+                </div>
+                <div class = "project-desc">
+                    <p>Basic Anagrams game with words, scores, games, and users stored in database</p>
+                    <p>Allows users to register/login and play</p>
+                    <p>----------------------</p>
+                    <p>Full-Stack project using <strong>MERN Stack</strong></p>
+                    <p><strong>MongoDB, ExpressJS, ReactJS, NodeJS</strong></p>
+                    <div class = "detail-link"><a href="https://github.com/Waterdoze/Anagram" class = "source">Source</a></div>
+                </div>
+            </div>
+            <hr class="line1"></hr>
+            <div class = project2>
+                <div class = "portfolio-project-title">
+                    <h3>Social Media App/Reddit Clone</h3>
+                    <img src="./img/social_media_home.PNG"></img>
+                </div>
+                <div class = "project-desc">
+                    <p>Allows users to register/login, post, like, comment, and view other users' profiles</p>
+                    <p>Handles user authentication and saves posts, comments, likes, users to database</p>
+                    <p>----------------------</p>
+                    <p>Full-Stack project created using the <strong>MERNG</strong> stack</p>
+                    <p><strong>MongoDB, Express, ReactJS, NodeJS, Graphql</strong></p>
+                    <div class = "detail-link"><a href="https://github.com/KevinDai11/social-media-app" class = "source">Source</a></div>
+                </div>
+            </div>
+            <div class="line2"></div>
+            <div class = project3>
+                <div class = "portfolio-project-title">
+                    <h3>E-Commerce/Amazon Clone</h3>
+                    <img src="./img/amazon.png"></img>
+                </div>
+
+                <div class = "project-desc">
+                    <p>Amazon Clone with header, home page, checkout page, </p>
+                    <p>selecting products and product page, and user authentication</p>
+                    <p>----------------------</p>
+                    <p>Full-Stack project using <strong>ReactJS and Firebase</strong></p>
+                    <p>also utilizes <strong>HTML, CSS, and React Context API</strong></p>
+                    <div class = "detail-link"><a href="https://github.com/KevinDai11/amazon_clone" class = "source">Source</a></div>
+                </div>
+            </div>
+            <div class="line3"></div>
+            <div class = project4>
+                <div class = "portfolio-project-title">
+                    <h3><a href = "https://kevindai11.github.io/sorting_visualizer/" class = "link">Sorting Algorithm Visualizer</a></h3>
+                    <img src="./img/sorting_start.PNG"></img>
+                </div>
+
+                <div class = "project-desc">
+                    <p>Built React Native application/website for visualizing various sorting algorithms</p>
+                    <p>Implemented Merge Sort, Quick Sort, Insertion Sort, Selection Sort, Bubble Sort, and Heap Sort</p>
+                    <p>----------------------</p>
+                    <p>created using <strong>JSX/Javascript</strong> and <strong>Html and CSS</strong></p>
+                    <div class = "detail-link"><a href="https://github.com/KevinDai11/sorting_visualizer" class = "source">Source</a></div>
+                </div>
+            </div>
+            <div class="line4"></div>
+            <div class = project5>
+                <div class = "portfolio-project-title">
+                    <h3><a href ="./downloadables/Minesweeper.jar" download class = "link">Minesweeper</a></h3>
+                    <img src="./img/minesweeper_opened.JPG"></img>
+                </div>
+                <div class = "project-desc">
+                    <p>A simple minesweeper game</p>
+                    <p>----------------------</p>
+                    <p>created using <strong>Java</strong></p>
+                    <p>implementing Java Swing and Java AWT packages</p>
+                    <div class = "detail-link"><a href="https://github.com/KevinDai11/Minesweeper" class = "source">Source</a></div>
+                </div>
+            </div>
+            <div class="line5"></div>
+            <div class = project6>
+                <div class = "portfolio-project-title">
+                    <h3><a href="https://github.com/KevinDai11">Other Projects</a></h3>
+                </div>
+                <div class="project-desc">
+                    <p>Mobile Development: Snack Game, Flappy Bird, Weather App, Music Player App</p>
+                    <p>AI: Music Artist Album Cover Recognition (built at <a href="https://howdyhack2021.devpost.com/">Howdy Hack 2021</a>   hosted by <a href="https://tamuhack.com/">TAMUhack</a>)</p>
+                    <p>Web Development: Stock Simulation game (built at <a href="https://tamuhack.com/th">TAMUhack 2023</a> hosted by TAMUhack</p>
+                </div>
+            </div>
+            <div class="line6"></div>
+        </div>
+
+    </div>
+
+    
+
+  </body>
+</html>
